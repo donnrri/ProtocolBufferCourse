@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+// full path from root of project
+// using package name
+import "date-with-package.proto";
+
+message Person{
+    int32 age = 1;
+    string first_name= 2;
+    string last_name = 3;
+    byte image = 4;
+    bolean is_profile_verified = 5;
+    float height = 6;
+    my.date.Date bithday = 7; // reference the package
+}
